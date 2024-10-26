@@ -17,7 +17,7 @@ function renderMarkdown(chunk) {
         // Multi-line code block
         if (isCodeBlock) {
             // End of code block
-            createElement('pre', "<code class=\"language-".concat(codeBlockLanguage, "\">").concat(currentContent, "</code>"));
+            createElement('pre', currentContent);
             currentContent = '';
             isCodeBlock = false;
             codeBlockLanguage = '';
